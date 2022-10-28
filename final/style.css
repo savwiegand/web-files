@@ -1,0 +1,200 @@
+
+header{
+  align-items: center;
+
+}
+header a{
+  color: black;
+  margin: 20px;
+}
+header a:link{
+  text-decoration: none;
+
+}
+header a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+  text-decoration-color: #15CCCC;
+}
+
+h1, #index{
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#name{
+  text-align: center;
+  font-size: 25px;
+  text-decoration: underline;
+  text-decoration-color: #15CCCC;
+  }
+
+#portfolio{
+  line-height: 0;
+
+  column-count:5;
+  column-gap: 0px;
+  display:inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  /* got code help from https://medium.com/@MilesOfRoses/css-image-gallery-for-pictures-with-different-aspect-ratios-a20ffecb75d5
+  to figure out how to have images of different sizes all still fit together like a grid */
+}
+
+#portfolio img{
+  display: inline-block;;
+  margin-right: auto;
+  margin-left: auto;
+  object-fit:cover;
+  width:100%;
+  height:100%;
+  filter: grayscale(100%);
+}
+
+
+/*
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 0px;
+
+}
+
+.row::after{
+  content:"";
+  clear: both;
+  display: table;
+}
+
+#pics img{
+  width:100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+#pics{
+
+  margin-left: 70px;
+}
+
+*/
+
+#project1{
+  margin-top: 75px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #15CCCC;
+}
+
+#futuratitle{
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #15CCCC;
+}
+#typespec{
+  width: 30%;
+  height: 30%;
+
+}
+
+* {box-sizing:border-box}
+.slideshow-container{
+  margin-top: 75px;
+  max-width: 775px;
+
+
+  border: 3px solid black;
+}
+
+.proj{
+  display: none;
+}
+
+.previous, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 800px;
+  left: 739px;
+  border-radius: 3px 0 0 3px;
+}
+.previous:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+#contact{
+  display:flex;
+  flex-direction:column;
+  text-align: center;
+  align-items: center;
+  height: calc(100% - 50px); /*this comes up as an error, but we did it in class and
+  I have seen some examples of it online, so not sure what to do about that*/
+  margin-top: 50px;
+}
+
+
+
+.underline{
+  text-decoration: underline;
+  text-decoration-color: #15CCCC;
+}
+.contactdiv{
+  height:100%;
+}
+
+#social img{
+  width:50px;
+  margin: 0px 10px 0px 10px;
+
+}
+
+#social{
+  display:flex;
+  width: 60%;
+  margin:auto;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+#about, #about1, #about2, #about3 {
+  text-align: center;
+}
+
+#about, #about2{
+  text-decoration: underline;
+  text-decoration-color: #15CCCC;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#grid-container img{
+  object-fit:cover;
+  width: 100%;
+  height: 100%
+}
+
+.grid-item img:hover {
+  opacity: 0.5;
+
+}
